@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navya R. | My Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f1ea;
+            color: #252525;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #252525;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d8b98a;
+        }
+
+        .hero {
+            min-height: 78vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background:
+                radial-gradient(circle at top right, #dfc9a6 0, transparent 30%),
+                radial-gradient(circle at bottom left, #c8d3c5 0, transparent 32%),
+                #f4f1ea;
+        }
+
+        .hero-box {
+            max-width: 750px;
+        }
+
+        .hello {
+            font-size: 15px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #806642;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 80px);
+            line-height: 1;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #806642;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #555;
+            margin-bottom: 28px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #252525;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #806642;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #777;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .education-card {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 28px;
+            border-left: 5px solid #806642;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+        }
+
+        .education-card h3 {
+            margin-bottom: 5px;
+        }
+
+        .education-card p {
+            color: #666;
+        }
+
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .interest {
+            background: white;
+            padding: 28px 20px;
+            text-align: center;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        }
+
+        .interest .icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background: #252525;
+            color: white;
+            text-align: center;
+        }
+
+        .contact p {
+            color: #d6d6d6;
+            margin: 8px 0 22px;
+        }
+
+        footer {
+            background: #1b1b1b;
+            color: #aaa;
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .interest-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>NR.</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#interests">Interests</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-box">
+            <div class="hello">Hello, I'm</div>
+            <h1>Navya <span>R.</span></h1>
+            <p>BCA Student at Rajagiri College of Social Sciences</p>
+            <a class="button" href="#about">Explore My Portfolio</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>A little introduction</p>
+        </div>
+
+        <div class="about">
+            <p>
+                I am Navya R., a BCA student at Rajagiri College of Social Sciences.
+                I am interested in learning about computers, technology and programming.
+                I enjoy exploring new ideas and developing my knowledge through
+                academic activities and practical learning.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-title">
+            <h2>Education</h2>
+            <p>My academic journey</p>
+        </div>
+
+        <div class="education-card">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>Rajagiri College of Social Sciences</p>
+            <p>Currently pursuing my undergraduate degree.</p>
+        </div>
+    </section>
+
+    <section id="interests">
+        <div class="section-title">
+            <h2>My Interests</h2>
+            <p>Things I enjoy learning and exploring</p>
+        </div>
+
+        <div class="interest-grid">
+            <div class="interest">
+                <div class="icon">💻</div>
+                <h3>Technology</h3>
+                <p>Exploring computers and new technologies.</p>
+            </div>
+
+            <div class="interest">
+                <div class="icon">⌨️</div>
+                <h3>Programming</h3>
+                <p>Learning programming and building simple projects.</p>
+            </div>
+
+            <div class="interest">
+                <div class="icon">🎨</div>
+                <h3>Creativity</h3>
+                <p>Enjoying creative ideas and digital design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+            <p>Thank you for visiting my portfolio.</p>
+        </div>
+
+        <p>Email: navyarc97@gmail.com</p>
+        <a class="button" href="mailto:navyarc97@gmail.com">Say Hello</a>
+    </section>
+
+    <footer>
+        © 2026 Navya R. | Personal Portfolio
+    </footer>
+
+</body>
+</html>
